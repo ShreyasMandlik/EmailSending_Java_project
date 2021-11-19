@@ -23,8 +23,8 @@ public class App
     	System.out.println("preparing to send message ...");
         String message="Hello ,This is for now";
         String subject="Conformation message";
-        String to="mandlikshreyas01@gmail.com";
-        String from="smandlikpict@gmail.com";
+        String to="email to which you want to send";
+        String from="email from which you are sending";
         
         sendEmail(message,subject,to,from);
     }
@@ -45,7 +45,7 @@ public class App
 	Session session=Session.getInstance(properties, new Authenticator() {
 		@Override
 		protected PasswordAuthentication getPasswordAuthentication() {				
-			return new PasswordAuthentication("smandlikpict@gmail.com", "shree0170");
+			return new PasswordAuthentication("Your email", "password");
 		}
 		
 		
