@@ -21,12 +21,20 @@ public class App
     public static void main( String[] args )
     {
     	System.out.println("preparing to send message ...");
-        String message="Hello ,This is for now";
-        String subject="Conformation message";
-        String to="email to which you want to send";
-        String from="email from which you are sending";
-        
-        sendEmail(message,subject,to,from);
+    	Scanner sc= new Scanner(System.in);
+        String from="smandlikpict@gmail.com";
+        System.out.println("Enter the Subject ");
+    	String subject=sc.nextLine();
+    	System.out.println("Enter the Message: ");
+        String message=sc.nextLine();
+    	System.out.println("Enter the number of Participants you want to share the message");
+    	int a=sc.nextInt();
+    	sc.nextLine();
+    	for(int i=0;i<a;i++) {
+    		System.out.print("Enter the mail id of Reciptent :");
+    		String to=sc.nextLine();
+//          For Sending Message
+            sendEmail(message,subject,to,from);   
     }
 
 	private static void sendEmail(String message, String subject, String to, String from) {
