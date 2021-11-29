@@ -22,7 +22,7 @@ public class App
     {
     	System.out.println("preparing to send message ...");
     	Scanner sc= new Scanner(System.in);
-        String from="smandlikpict@gmail.com";
+        String from="Account For which you want to send";
         System.out.println("Enter the Subject ");
     	String subject=sc.nextLine();
     	System.out.println("Enter the Message: ");
